@@ -1,0 +1,37 @@
+.Mahasiswa {
+  padding: 0 0.2em;
+  .card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(136, 166, 255, 0.18);
+    border-radius: 12px;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+    .nama-jurusan, .nim {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+  
+    .nama-jurusan p:nth-child(1) {
+      font-weight: 600;
+    }
+
+    .nama-jurusan p:nth-child(2) {
+      font-style: italic;
+    }
+  }
+} 
+
+@media (max-width: 720px) {
+  .Mahasiswa {
+    .card {
+      border-radius: 7px;
+      .nama-jurusan, .nim {
+        font-size: 12px;
+      }
+    }
+  }
+}
