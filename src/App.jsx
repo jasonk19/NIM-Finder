@@ -71,7 +71,7 @@ function App() {
           convertKode={getFakultasOrJurusan}
         />
         <div className='button-container'>
-          <button className='load-more-button' onClick={loadMoreData}>Load More</button>
+          <button className='load-more-button' onClick={loadMoreData}>LOAD MORE</button>
         </div>
       </div>
     </>
