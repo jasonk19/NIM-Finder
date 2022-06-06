@@ -23,7 +23,7 @@ let arrayMahasiswas = []
 function App() {
   const [datas, setDatas] = useState(mahasiswas)
   const [items, setItems] = useState([])
-  const [next, setNext] = useState(10)
+  const [next, setNext] = useState(20)
 
   const loopWithSlice = (start, end) => {
     const slicedMahasiswas = datas.slice(start, end)
@@ -32,7 +32,7 @@ function App() {
   }
 
   useEffect(() => {
-    loopWithSlice(0, mahasiswasPerPage)
+    loopWithSlice(0, mahasiswasPerPage + 10)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
