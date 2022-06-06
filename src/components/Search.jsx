@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/Search.scss'
 import { motion } from 'framer-motion'
 
-const Search = () => {
+const Search = ({handleSearch}) => {
 
   const variants = {
     visible: { opacity: 1 },
@@ -14,11 +14,11 @@ const Search = () => {
       initial="hidden"
       animate="visible"
       variants={variants}
-      transition={{ duration: 6.5 }}
+      transition={{ duration: 4.5 }}
     >
       <div className='Search'>
         <h3>Search</h3>
-        <input type="text" placeholder="Search by (name, jurusan, nim)"></input>
+        <input onChange={handleSearch} type="search" placeholder="Search by (name, jurusan, nim)"></input>
       </div>
     </motion.div>
   )

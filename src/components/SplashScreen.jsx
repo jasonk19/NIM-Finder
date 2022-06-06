@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 
 const SplashScreen = () => {
   const variants = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: "-100vw" },
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: "-100vh" },
   }
 
   return (
@@ -14,7 +14,7 @@ const SplashScreen = () => {
       initial="visible"
       animate="hidden"
       variants={variants}
-      transition={{ ease: "easeIn", duration: 4, delay: 0.5 }}
+      transition={{ ease: "easeIn", duration: 2, delay: 0.5 }}
       className='SplashScreen'
     >
         <img src={illustration} alt="illustration"></img>
