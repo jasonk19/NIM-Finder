@@ -18,7 +18,7 @@ const Search = ({handleSearch}) => {
     >
       <div className='Search'>
         <h3>Search</h3>
-        <input onChange={handleSearch} type="search" placeholder="Search by (name, jurusan, nim)"></input>
+        <input onChange={handleSearch} type="search" placeholder="Input keywords (*end with space)"></input>
       </div>
     </motion.div>
   )
