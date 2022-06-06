@@ -21,7 +21,7 @@ const mahasiswasPerPage = 20
 let arrayMahasiswas = []
 
 function App() {
-  const [datas, setDatas] = useState(mahasiswas.slice(0, 20))
+  const [datas, setDatas] = useState(mahasiswas)
   const [items, setItems] = useState([])
   const [next, setNext] = useState(10)
 
